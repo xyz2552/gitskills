@@ -1,5 +1,16 @@
 import streamlit as st
 import streamlit.components.v1 as components
+from streamlit.cache import cache
+ 
+# 自定义安装函数
+@cache
+def install_DrissionPage():
+    import subprocess
+    subprocess.run(["pip", "install", "DrissionPage"])
+ 
+# 调用安装函数
+install_DrissionPage()
+
 from DrissionPage import WebPage
 from DrissionPage import ChromiumOptions
 
