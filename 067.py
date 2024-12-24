@@ -1,9 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from streamlit.cache import cache
  
 # 自定义安装函数
-@cache
+@st.cache
 def install_DrissionPage():
     import subprocess
     subprocess.run(["pip", "install", "DrissionPage"])
