@@ -42,9 +42,9 @@ def input_grade(user,ppasswoed,k_xh):
     # 访问百度
     page.get('https://pt.tiangong.edu.cn/cas/login')
     # 定位输入框并输入工号
-    page.ele('#username').input(user)  #'20109031'
+    page.ele('#username').input(user)  #''
     # 定位输入框并输入密码
-    page.ele('#ppassword').input(ppasswoed) #'Tgu#2024'
+    page.ele('#ppassword').input(ppasswoed) #''
     # print("标题为：",page.title)
     # 点击“登录”按钮
     page.ele('#dl').click()
